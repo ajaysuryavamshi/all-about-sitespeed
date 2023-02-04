@@ -44,4 +44,4 @@ jobs:
 
       - name: Run Sitespeed.io
         run: |
-          npx sitespeed.io $SITESPEED_IO_ARGS https://www.visible.com/
+          npx sitespeed.io https://www.visible.com/
