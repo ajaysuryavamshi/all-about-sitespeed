@@ -42,8 +42,10 @@ jobs:
         with:
           chrome-version: stable
       - name: install chrome
-        run: chrome --version
-
+        run: |
+          chrome --version
+          whereis google-chrome
+      
       # Install Sitespeed
       - name: install sitespeed
         run: |
