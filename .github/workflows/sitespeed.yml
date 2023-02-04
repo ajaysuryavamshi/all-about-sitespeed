@@ -16,20 +16,14 @@ env:
 jobs:
   run-sitespeed-io:
     runs-on: ubuntu-latest
-
+  
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16
-
-    - name: Install dependencies
-      run: |
-        npm ci
-
-    - name: Run Sitespeed.io
-      run: |
-        npx sitespeed.io $SITESPEED_IO_ARGS https://www.visible.com/
+      - name: Run Sitespeed.io
+        run: |
+          npx sitespeed.io $SITESPEED_IO_ARGS https://www.visible.com/
