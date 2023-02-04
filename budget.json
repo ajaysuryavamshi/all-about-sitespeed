@@ -1,0 +1,34 @@
+{
+  "performance": {
+    "speedIndex": {
+      "max": 1000
+    },
+    "firstVisualChange": {
+      "max": 200
+    },
+    "lastVisualChange": {
+      "max": 1000
+    },
+    "timeToFirstByte": {
+      "max": 300
+    },
+    "firstContentfulPaint": {
+      "max": 1000
+    },
+    "firstMeaningfulPaint": {
+      "max": 1000
+    },
+    "firstCPUIdle": {
+      "max": 1000
+    },
+    "estimatedInputLatency": {
+      "max": 50
+    },
+    "totalBlockingTime": {
+      "max": 300
+    },
+    "maxPotentialFirstInputDelay": {
+      "max": 100
+    }
+  }
+}
