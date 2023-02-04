@@ -36,8 +36,14 @@ jobs:
         uses: actions/checkout@v3
         with:
           node-version: '17.x'
+      
+      # Install Google Chrome
+      - name: Download and install Google Chrome
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome-stable_current_amd64.deb
 
-      # Install Newman
+      # Install Sitespeed
       - name: install sitespeed
         run: |
           npm install --save-dev sitespeed.io
