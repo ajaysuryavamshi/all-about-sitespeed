@@ -38,8 +38,8 @@ jobs:
           node-version: '17.x'
       
       # Install Google Chrome
+      - uses: browser-actions/setup-chrome@v1
       - name: install chrome
-        uses: browser-actions/setup-chrome@v1
         run: chrome --version
       
       # Install Sitespeed
