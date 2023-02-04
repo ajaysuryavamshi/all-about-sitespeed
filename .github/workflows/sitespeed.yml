@@ -39,9 +39,11 @@ jobs:
       
       # Install Google Chrome
       - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
       - name: install chrome
         run: chrome --version
-      
+
       # Install Sitespeed
       - name: install sitespeed
         run: |
