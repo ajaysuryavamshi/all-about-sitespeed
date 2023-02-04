@@ -30,8 +30,6 @@ jobs:
       - name: create artifacts directory
         run: |
           mkdir artifacts
-          chrome --version
-          whereis google-chrome
 
       # Install NodeJS
       - name: install node
