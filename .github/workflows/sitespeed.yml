@@ -53,7 +53,7 @@ jobs:
 
       - name: Run Sitespeed.io
         run: |
-          npx sitespeed.io --browser.chrome.headless true --browsertime.iterations 3 https://www.visible.com/
+          npx sitespeed.io https://www.visible.com/ --headless
 
       # Publish Report
       - name: publish report
