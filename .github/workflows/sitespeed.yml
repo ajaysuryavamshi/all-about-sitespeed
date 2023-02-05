@@ -53,9 +53,9 @@ jobs:
 
       - name: Run Sitespeed.io
         run: |
-          npx sitespeed.io https://www.visible.com/
+          npx sitespeed.io --browser.chrome.headless true --browsertime.iterations 3 https://www.visible.com/
 
-# Publish Report
+      # Publish Report
       - name: publish report
         uses: actions/upload-artifact@v3
         if: always()
